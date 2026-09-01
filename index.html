@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORINA.OS — Portfolio</title>
+    <meta name="description" content="Portfolio of Corina Naves, a Multimedia and Digital Technology student working across code, 3D and creative technology.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BOOT SCREEN -->
+<div id="boot-screen" class="boot-screen">
+    <div class="boot-card">
+        <div class="boot-header">
+            <span>CORINA.OS</span>
+            <span><i class="live-dot"></i> ONLINE</span>
+        </div>
+        <div class="boot-body">
+            <div class="boot-symbol">◈</div>
+            <h1>HI, I'M CORINA.</h1>
+            <p>
+                MULTIMEDIA · DIGITAL TECHNOLOGY<br>
+                CODE · 3D · CREATIVE TECHNOLOGY
+            </p>
+            <button id="enter-btn" class="btn" type="button">ENTER WORKSPACE <span>→</span></button>
+        </div>
+        <div class="boot-footer">SYSTEM READY / BUILD 2026.08</div>
+    </div>
+</div>
+
+<!-- DESKTOP -->
+<main id="desktop" class="desktop hidden">
+
+    <!-- TOP BAR -->
+    <header class="top-bar">
+        <div class="system-name">
+            <span class="status-dot"></span>
+            CORINA.OS
+            <span class="version">v2.0</span>
+        </div>
+        <div class="system-info">
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle display theme">◐ THEME</button>
+            <span id="system-status">SYSTEM READY</span>
+            <span id="clock">00:00:00</span>
+        </div>
+    </header>
+
+    <!-- INTRO -->
+    <section class="desktop-intro">
+        <div>
+            <p class="eyebrow">DIGITAL CREATIVE / DEVELOPER</p>
+            <h1>I BUILD<br><span>DIGITAL THINGS.</span></h1>
+        </div>
+        <div class="intro-meta">
+            <p>Valencia, Spain</p>
+            <p>Multimedia & Digital Technology</p>
+            <p class="available"><span class="pulse-dot"></span> AVAILABLE FOR CREATIVE WORK</p>
+            <nav class="mini-contact" aria-label="Contact links">
+                <a href="mailto:corinmauri@gmail.com">CORINMAURI@GMAIL.COM</a>
+                <a href="https://www.linkedin.com/in/corina-naves-mauri-b25063329/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+                <a href="https://github.com/cnavesmaurii" target="_blank" rel="noopener noreferrer">GITHUB</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- APP GRID -->
+    <section class="app-grid">
+        <div class="app-icon" data-window="projects">
+            <div class="icon-box">▣</div>
+            <span>PROJECTS <kbd>1</kbd></span>
+        </div>
+        <div class="app-icon" data-window="studio3d">
+            <div class="icon-box">◇</div>
+            <span>3D LAB <kbd>2</kbd></span>
+        </div>
+        <div class="app-icon" data-window="about">
+            <div class="icon-box">◉</div>
+            <span>ABOUT <kbd>3</kbd></span>
+        </div>
+        <div class="app-icon" data-window="toolbox">
+            <div class="icon-box">⚙</div>
+            <span>TOOLBOX <kbd>4</kbd></span>
+        </div>
+        <div class="app-icon" data-window="resume">
+            <div class="icon-box">▤</div>
+            <span>RESUME <kbd>5</kbd></span>
+        </div>
+        <div class="app-icon" data-window="contact">
+            <div class="icon-box">@</div>
+            <span>CONTACT <kbd>6</kbd></span>
+        </div>
+    </section>
+
+    <!-- PROJECTS WINDOW -->
+    <div id="window-projects" class="window hidden draggable">
+        <div class="window-header drag-handle">
+            <span>PROJECTS.exe</span>
+            <button class="close-btn" type="button" data-close="window-projects" aria-label="Close projects window">×</button>
+        </div>
+        <div class="window-body">
+            <div class="window-title">
+                <span>SELECTED WORK</span>
+                <span class="window-number">02 PROJECTS / SELECT A CASE STUDY</span>
+            </div>
+            
+            <article class="project-card">
+                <div class="project-header">
+                    <div>
+                        <span class="project-number">01</span>
+                        <h2>SkyRival</h2>
+                    </div>
+                    <span class="badge">PYTHON</span>
+                </div>
+                <p class="project-desc">Interactive application designed to analyse vertical jump performance using inertial data collected from a smartphone.</p>
+                <div class="project-grid">
+                    <div>
+                        <span class="label">ROLE</span>
+                        <p>Development · Data Processing · UI</p>
+                    </div>
+                    <div>
+                        <span class="label">CONTEXT</span>
+                        <p>UPV / PROMU</p>
+                    </div>
+                </div>
+                <div class="tech-list">
+                    <span>Python</span><span>NumPy</span><span>SciPy</span><span>Tkinter</span><span>Matplotlib</span><span>TCP/IP</span>
+                </div>
+                <div class="project-footer">
+                    <span>2024 — 2025</span>
+                    <button class="case-study-btn" type="button" aria-expanded="false">VIEW NOTES +</button>
+                </div>
+                <div class="case-study" hidden>
+                    <p><strong>THE BRIEF:</strong> Turn raw smartphone motion data into feedback that feels useful to athletes, not just technical.</p>
+                    <p><strong>MY FOCUS:</strong> signal processing, visualising results and a straightforward desktop interface.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-header">
+                    <div>
+                        <span class="project-number">02</span>
+                        <h2>Saludify</h2>
+                    </div>
+                    <span class="badge">WEB APP</span>
+                </div>
+                <p class="project-desc">Interactive digital platform focused on healthy habits, user interaction and accessible multimedia design.</p>
+                <div class="project-grid">
+                    <div>
+                        <span class="label">ROLE</span>
+                        <p>UX · Development · Visual Design</p>
+                    </div>
+                    <div>
+                        <span class="label">CONTEXT</span>
+                        <p>University Project</p>
+                    </div>
+                </div>
+                <div class="tech-list">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UX/UI</span>
+                </div>
+                <div class="project-footer">
+                    <span>2025 — 2026</span>
+                    <button class="case-study-btn" type="button" aria-expanded="false">VIEW NOTES +</button>
+                </div>
+                <div class="case-study" hidden>
+                    <p><strong>THE BRIEF:</strong> Make healthy choices feel approachable through interactive, accessible web experiences.</p>
+                    <p><strong>MY FOCUS:</strong> translating UX ideas into a clear visual system and responsive interface.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <!-- 3D LAB WINDOW -->
+    <div id="window-studio3d" class="window studio-window hidden draggable">
+        <div class="window-header drag-handle">
+            <span>3D_LAB.exe</span>
+            <button class="close-btn" data-close="window-studio3d">×</button>
+        </div>
+        <div class="window-body studio-layout">
+            <aside class="model-list">
+                <div class="sidebar-title">PROJECT ASSETS</div>
+                <button class="model-btn active" data-model="character">01 / CHARACTER</button>
+                <button class="model-btn" data-model="concept">02 / CONCEPT ART</button>
+                <button class="model-btn" data-model="environment">03 / ENVIRONMENT</button>
+                <button class="model-btn" data-model="objects">04 / OBJECTS</button>
+                <div class="sidebar-footer">
+                    BLENDER<br>PROCREATE<br>3D MODELLING<br>DIGITAL ART
+                </div>
+            </aside>
+
+            <section class="model-display">
+                <div id="view-character" class="studio-view">
+                    <div class="studio-heading">
+                        <span>01 / CHARACTER DEVELOPMENT</span>
+                        <span>2D → 3D</span>
+                    </div>
+                    <div class="character-grid">
+                        <div class="character-image">
+                            <img src="images/model-sheet.png" alt="Character model sheet">
+                            <span class="image-label">MODEL SHEET</span>
+                        </div>
+                        <div class="character-image">
+                            <img src="images/representacion-grafica.png" alt="Character representation">
+                            <span class="image-label">FINAL REPRESENTATION</span>
+                        </div>
+                    </div>
+                    <div class="model-specs">
+                        <div><strong>TYPE</strong><p>Original Character</p></div>
+                        <div><strong>SOFTWARE</strong><p>Blender</p></div>
+                        <div><strong>PROCESS</strong><p>Modelling · Sculpting · Texturing · Rigging</p></div>
+                    </div>
+                </div>
+
+                <div id="view-concept" class="studio-view hidden">
+                    <div class="studio-heading">
+                        <span>02 / CONCEPT ART</span>
+                        <span>DRAWING</span>
+                    </div>
+                    <div class="concept-grid">
+                        <div>
+                            <img src="images/entintado-boceto.png" alt="Ink sketch">
+                            <span class="image-label">01 — INK / SKETCH</span>
+                        </div>
+                        <div>
+                            <img src="images/color.png" alt="Colour study">
+                            <span class="image-label">02 — COLOUR STUDY</span>
+                        </div>
+                    </div>
+                    <div class="model-specs">
+                        <div><strong>TYPE</strong><p>Character Concept Art</p></div>
+                        <div><strong>MEDIA</strong><p>Digital Drawing</p></div>
+                        <div><strong>PROCESS</strong><p>Sketch · Linework · Colour</p></div>
+                    </div>
+                </div>
+
+                <div id="view-environment" class="studio-view hidden">
+                    <div class="studio-heading">
+                        <span>03 / ENVIRONMENT</span>
+                        <span>BLENDER</span>
+                    </div>
+                    <div class="environment-main">
+                        <img src="images/cuarto.png" alt="3D room">
+                    </div>
+                    <div class="environment-secondary">
+                        <div>
+                            <img src="images/cuarto-lado.png" alt="Room side view">
+                            <span class="image-label">SIDE VIEW</span>
+                        </div>
+                    </div>
+                    <div class="model-specs">
+                        <div><strong>TYPE</strong><p>3D Environment</p></div>
+                        <div><strong>SOFTWARE</strong><p>Blender</p></div>
+                        <div><strong>PROCESS</strong><p>Modelling · Materials · Lighting</p></div>
+                    </div>
+                </div>
+
+                <div id="view-objects" class="studio-view hidden">
+                    <div class="studio-heading">
+                        <span>04 / OBJECTS</span>
+                        <span>16 ASSETS / BLENDER + ONSHAPE</span>
+                    </div>
+                    <div class="asset-filter" role="group" aria-label="Filter 3D assets">
+                        <button type="button" class="asset-filter-btn active" data-filter="all">ALL / 16</button>
+                        <button type="button" class="asset-filter-btn" data-filter="blender">BLENDER / 7</button>
+                        <button type="button" class="asset-filter-btn" data-filter="onshape">ONSHAPE / 9</button>
+                    </div>
+                    <div class="objects-gallery">
+                        <div class="object-card" data-tool="blender"><img src="images/cajonera.png" alt="Cajonera 3D"><span>01 / CAJONERA · BLENDER</span></div>
+                        <div class="object-card" data-tool="blender"><img src="images/silla.png" alt="Silla 3D"><span>02 / SILLA · BLENDER</span></div>
+                        <div class="object-card" data-tool="blender"><img src="images/silla2.png" alt="Silla 3D - second view"><span>02B / SILLA · BLENDER</span></div>
+                        <div class="object-card" data-tool="blender"><img src="images/mesa2.png" alt="Mesa 3D - second view"><span>03 / MESA · BLENDER</span></div>
+                        <div class="object-card" data-tool="blender"><img src="images/aparador.png" alt="Aparador 3D"><span>04 / APARADOR · BLENDER</span></div>
+                        <div class="object-card" data-tool="blender"><img src="images/lampara.png" alt="Lampara 3D"><span>05 / LÁMPARA · BLENDER</span></div>
+                        <div class="object-card" data-tool="blender"><img src="images/lampara2.png" alt="Lámpara 3D - second view"><span>05B / LÁMPARA · BLENDER</span></div>
+                        <div class="object-card" data-tool="onshape"><img src="onshape imagenes/onshape1_iso.png" alt="Onshape object isometric view"><span>06 / OBJECT_01 ISO · ONSHAPE</span></div>
+                        <div class="object-card" data-tool="onshape"><img src="onshape imagenes/onshape1_front.png" alt="Onshape object front view"><span>06A / OBJECT_01 FRONT · ONSHAPE</span></div>
+                        <div class="object-card" data-tool="onshape"><img src="onshape imagenes/onshape1_side.png" alt="Onshape object side view"><span>06B / OBJECT_01 SIDE · ONSHAPE</span></div>
+                        <div class="object-card" data-tool="onshape"><img src="onshape imagenes/onshape2.png" alt="Onshape product study two"><span>07 / PRODUCT STUDY · ONSHAPE</span></div>
+                        <div class="object-card" data-tool="onshape"><img src="onshape imagenes/onshape3.png" alt="Onshape product study three"><span>08 / PRODUCT STUDY · ONSHAPE</span></div>
+                        <div class="object-card" data-tool="onshape"><img src="onshape imagenes/onshape4.png" alt="Onshape product study four"><span>09 / FORM STUDY · ONSHAPE</span></div>
+                        <div class="object-card" data-tool="onshape"><img src="onshape imagenes/onshape5.png" alt="Onshape product study five"><span>10 / FORM STUDY · ONSHAPE</span></div>
+                        <div class="object-card" data-tool="onshape"><img src="onshape imagenes/onshape6.png" alt="Onshape product study six"><span>11 / FORM STUDY · ONSHAPE</span></div>
+                        <div class="object-card" data-tool="onshape"><img src="onshape imagenes/onshape7.png" alt="Onshape product study seven"><span>12 / FORM STUDY · ONSHAPE</span></div>
+                    </div>
+                    <div class="model-specs">
+                        <div><strong>TYPE</strong><p>3D Asset Collection</p></div>
+                        <div><strong>SOFTWARE</strong><p>Blender · Onshape</p></div>
+                        <div><strong>FOCUS</strong><p>Hard Surface · Product Modelling</p></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ABOUT WINDOW -->
+    <div id="window-about" class="window about-window hidden draggable">
+        <div class="window-header drag-handle">
+            <span>ABOUT.txt</span>
+            <button class="close-btn" data-close="window-about">×</button>
+        </div>
+        <div class="window-body about-body">
+            <div class="about-intro">
+                <span class="big-number">01</span>
+                <h2>CORINA<br>NAVES</h2>
+            </div>
+            <p class="about-main">I'm a Multimedia and Digital Technology student interested in the intersection between technology, design and creative experiences.</p>
+            <p>I enjoy working across different disciplines: programming interactive applications, designing digital experiences and creating 3D environments and assets. I also love editing and shaping visual stories — finding the rhythm, mood and small details that make a piece feel right.</p>
+            <div class="about-facts">
+                <div><span>FIELD</span><strong>Multimedia Technology</strong></div>
+                <div><span>LOCATION</span><strong>Valencia, Spain</strong></div>
+                <div><span>INTERESTS</span><strong>Code · 3D · Editing · UX · Creative Tech</strong></div>
+            </div>
+            <div class="signal-strip" aria-label="Creative practice highlights">
+                <span>CODE</span><span>→</span><span>MAKE</span><span>→</span><span>PLAY</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOOLBOX WINDOW -->
+    <div id="window-toolbox" class="window toolbox-window hidden draggable">
+        <div class="window-header drag-handle">
+            <span>TOOLBOX.sys</span>
+            <button class="close-btn" data-close="window-toolbox">×</button>
+        </div>
+        <div class="window-body">
+            <div class="tool-section">
+                <span class="label">PROGRAMMING</span>
+                <div class="skill-tags">
+                    <span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>C++</span><span>Git</span>
+                </div>
+            </div>
+            <div class="tool-section">
+                <span class="label">DATA / SCIENCE</span>
+                <div class="skill-tags">
+                    <span>NumPy</span><span>SciPy</span><span>Matplotlib</span><span>Pytest</span>
+                </div>
+            </div>
+            <div class="tool-section">
+                <span class="label">CREATIVE</span>
+                <div class="skill-tags">
+                    <span>Blender</span><span>Onshape</span><span>Procreate</span><span>Figma</span><span>Visual Editing</span>
+                </div>
+            </div>
+            <div class="tool-section">
+                <span class="label">CURRENTLY LEARNING</span>
+                <div class="learning-box">3D PIPELINES<br>CREATIVE DEVELOPMENT<br>INTERACTIVE MEDIA</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESUME WINDOW -->
+    <div id="window-resume" class="window resume-window hidden draggable">
+        <div class="window-header drag-handle">
+            <span>RESUME.pdf</span>
+            <button class="close-btn" data-close="window-resume">×</button>
+        </div>
+        <div class="window-body">
+            <div class="resume-header">
+                <div>
+                    <span class="label">CURRICULUM VITAE</span>
+                    <h2>CORINA NAVES</h2>
+                </div>
+                <span>2026</span>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span>2024 — NOW</span>
+                    <div>
+                        <strong>Universitat Politècnica de València</strong>
+                        <p>Multimedia & Digital Technology</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span>2024 — 2025</span>
+                    <div>
+                        <strong>SkyRival</strong>
+                        <p>Interactive data-driven application</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span>2025 — 2026</span>
+                    <div>
+                        <strong>Saludify</strong>
+                        <p>Multimedia web application</p>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-note">Full CV available on request.</div>
+        </div>
+    </div>
+
+    <!-- CONTACT WINDOW -->
+    <div id="window-contact" class="window contact-window hidden draggable">
+        <div class="window-header drag-handle">
+            <span>CONTACT.exe</span>
+            <button class="close-btn" data-close="window-contact">×</button>
+        </div>
+        <div class="window-body contact-body">
+            <span class="label">LET'S BUILD SOMETHING</span>
+            <h2>LET'S<br>CONNECT.</h2>
+            <div class="contact-links">
+                <a href="mailto:corinmauri@gmail.com">EMAIL <span>→</span> corinmauri@gmail.com</a>
+                <a href="https://www.linkedin.com/in/corina-naves-mauri-b25063329/" target="_blank" rel="noopener noreferrer">LINKEDIN <span>→</span></a>
+                <a href="https://github.com/cnavesmaurii" target="_blank" rel="noopener noreferrer">GITHUB <span>→</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STATUS BAR -->
+    <footer class="status-bar">
+        <span>CORINA.OS / WORKSPACE</span>
+        <span>6 APPS AVAILABLE</span>
+        <span><span class="status-dot"></span>ONLINE</span>
+    </footer>
+
+    <div class="pixel-scene" aria-hidden="true">
+        <canvas id="pixel-ocean" width="320" height="180"></canvas>
+    </div>
+
+    <aside class="command-deck" aria-label="Quick navigation">
+        <div class="command-deck__top"><span>QUICK LAUNCH</span><button id="command-close" aria-label="Close quick launch">×</button></div>
+        <p>Navigate the workspace with a click or your number keys.</p>
+        <div class="command-actions">
+            <button data-launch="projects">01 / PROJECTS</button>
+            <button data-launch="studio3d">02 / 3D LAB</button>
+            <button data-launch="contact">06 / CONTACT</button>
+        </div>
+        <span class="command-tip">PRESS <kbd>?</kbd> TO TOGGLE · <kbd>ESC</kbd> TO CLOSE WINDOWS</span>
+    </aside>
+    <button id="command-toggle" class="command-toggle" aria-label="Open quick navigation">+</button>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
